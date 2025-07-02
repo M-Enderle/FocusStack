@@ -1,0 +1,28 @@
+[project]
+name = "stacking"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pywinauto (>=0.6.9,<0.7.0)",
+    "pywin32 (>=310,<311)",
+    "pillow (>=11.2.1,<12.0.0)",
+    "opencv-python (>=4.11.0.86,<5.0.0.0)",
+    "rich (>=14.0.0,<15.0.0)",
+    "pyqt6 (>=6.9.1,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "stacking", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
