@@ -29,7 +29,7 @@ class FocusStackingApp(QtWidgets.QWidget):
         """Initialize the application window and load saved settings."""
         super().__init__()
         self.setWindowTitle("Sony Focus Stacking")
-        self.setWindowIcon(QtGui.QIcon("logo.png"))
+        self.setWindowIcon(QtGui.QIcon("assets/images/logo.png"))
         self.setFixedSize(320, 320)
         
         # Timestamp used for filtering images in live render
@@ -342,7 +342,7 @@ class FocusStackingApp(QtWidgets.QWidget):
                 self.live_render_window = QtWidgets.QWidget()
                 self.live_render_window.setWindowTitle("Live Render Preview")
                 self.live_render_window.setFixedSize(500, 400)
-                self.live_render_window.setWindowIcon(QtGui.QIcon("logo.png"))
+                self.live_render_window.setWindowIcon(QtGui.QIcon("assets/images/logo.png"))
 
                 v_layout = QtWidgets.QVBoxLayout(self.live_render_window)
                 self.live_render_label = QtWidgets.QLabel()

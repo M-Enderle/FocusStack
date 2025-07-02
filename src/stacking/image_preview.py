@@ -113,7 +113,7 @@ class ImagePreviewWindow(QtWidgets.QWidget):
         super().__init__()
         self.setWindowTitle("Image Preview")
         self.setFixedSize(500, 400)
-        self.setWindowIcon(QtGui.QIcon("logo.png"))
+        self.setWindowIcon(QtGui.QIcon("assets/images/logo.png"))
         self._create_widgets()
         
     def _create_widgets(self):

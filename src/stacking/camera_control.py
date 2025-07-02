@@ -91,12 +91,12 @@ class ImagingEdgeRemote:
         """
         while True:
             screenshot = self.capture_screenshot()
-            brightness = self._find_brightest_pixel(screenshot, 'brightness.png', 0.9)
+            brightness = self._find_brightest_pixel(screenshot, 'assets/images/brightness.png', 0.9)
             if brightness and brightness > 200:
                 return
             time.sleep(0.1)
 
-    def wait_for_transfer(self, template_path: str = "files.png", threshold: float = 0.985):
+    def wait_for_transfer(self, template_path: str = "assets/images/files.png", threshold: float = 0.985):
         """
         Block until file transfer operation completes.
 
