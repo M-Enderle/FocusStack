@@ -29,7 +29,11 @@ This application provides a user-friendly interface for focus stacking with Sony
     cd FocusStack
     ```
 
-2.  **Install dependencies using Poetry:**
+2.  **Download `focus-stack` executable:**
+    Download the latest release of `focus-stack` from [https://github.com/PetteriAimonen/focus-stack/releases](https://github.com/PetteriAimonen/focus-stack/releases).
+    Extract the contents of the downloaded archive and place the `focus-stack` folder (containing `focus-stack.exe`) in the root of this project.
+
+3.  **Install dependencies using Poetry:**
     ```bash
     poetry install
     ```
